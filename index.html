@@ -5,537 +5,650 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/font.css" />
+  <link rel="stylesheet" href="assets/css/style2.css"/>
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Projet AirBnb</title>
 </head>
 <body>
-  <!-- ...............................les cartes fines sans badges......................................... -->
-  <div class="container" id="fineCard">
-    <h2 class="text-dark h4 font-weight-bold mt-5">Découvrez les aventures Airbnb</h2>
-    <p class="mb-3">Voyages de plusieurs jours organisés par des experts locaux avec activités, repas et logements compris</p>
-    <div class="row">
-      <!-- /////////////////Première card\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-3 card border-0">
-        <a href="https://www.airbnb.fr/experiences/1161391?source=p0" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/64c23cf2-4833-4506-ab06-c943c7489709.jpg?aki_policy=poster" alt="Card image cap"/>
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="text-dark">TROMSOE</span>
-          </h6>
-          <p class="card-text ml-0 mb-1 mt-1">2 Nights PACKAGE All Inclusive</p>
-          <p class="card-text ml-0 mb-1 mt-1">3 jours</p>
-          <span>
-            <!-- ..........................la petite étoile rouge ! :D ............................. -->
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-              <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                <path d="M0,226v-226h226v226z" fill="none"></path>
-                <g fill="#e74c3c">
-                  <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                </g>
-              </g>
-            </svg> 5,O (1)
-          </span>
+  <!-- /////////////////////Header\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-xl py-0">
+
+      <div class="d-none d-xl-flex flex-grow-1" id="xlNavbar">
+        <a class="navbar-brand py-0 pr-0 pl-2" href="#">Airbnb</a>
+        <div class="navbar-nav ml-auto">
+          <button type="link" data-toggle="modal" data-target="#exModal"
+          class="btn bg-transparent nav-link py-0 px-3" href="#">Français (FR)</button>
+
+          <a class="nav-item nav-link py-0 px-3" href="#">€EUR</a>
+          <a class="nav-item nav-link py-0 px-3" href="#">Devenez hôte</a>
+          <a class="nav-item nav-link py-0 px-3" href="https://www.airbnb.fr/host/experiences?from_nav=1">Créez une expérience</a>
+          <a class="nav-item nav-link py-0 px-3" href="#">Aide</a>
+          <a class="nav-item nav-link py-0 px-3" href="#">Inscription</a>
+          <a class="nav-item nav-link py-0 px-3" href="#">Connexion</a>
         </div>
       </div>
-      <!-- //////////////////Seconde card\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-3 card border-0">
-        <a href="https://www.airbnb.fr/experiences/1161391?source=p0" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/0c800f0c-abf8-41aa-8243-0eeae27a7c4e.jpg?aki_policy=poster" alt="Card image cap"/>
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="text-dark">BALI</span>
-          </h6>
-          <p class="card-text ml-0 mb-1 mt-1">Nusa Penida & Nusa Lembongan 3-day</p>
-          <p class="card-text ml-0 mb-1 mt-1">3 jours</p>
+
+      <div class="modal fade" id="exModal" tabindex="-1" role="dialog" aria-labelledby="exModalLabel" aria-hidden="false">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Langues et régions suggérées </h5>
+              <button type="link" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="false">&times;</span>
+              </button>
+            </div>
+            <ol>
+
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">Français<br>Belgique</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">Français<br>Canada</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">Français<br>Suisse</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">English<br>United-States</br></button>
+            </ol>
+
+            <div class="modal-title"></div>
+            <h5 class="modal-body"> Choisissez une langue et une région</h5>
+            <ol>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">Azərbaycan dili<br>Azərbaycan</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">Bahasa Indonesia<br>Indonesia</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">Français<br>Suisse</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">English<br>United-States</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">Français<br>Belgique</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">Français<br>Canada</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">Français<br>Suisse</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">English<br>United-States</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">Français<br>Canada</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">Français<br>Suisse</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">English<br>United-States</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">Français<br>Canada</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">Français<br>Suisse</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">English<br>United-States</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">Français<br>Canada</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">Français<br>Suisse</br></button>
+              <button type="button" class="btn btn-light text-left" data-dismiss="modal">English<br>United-States</br></button>
+            </ol>
+          </nav>
         </div>
-      </div>
-      <!-- //////////////////Troisième card\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-3 card border-0">
-        <a href="https://www.airbnb.fr/experiences/1161391?source=p0" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/86c31198-0993-4b51-a008-fcb1759d6977.jpg?aki_policy=poster" alt="Card image cap"/>
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="text-dark">MOMBASA</span>
-          </h6>
-          <p class="card-text ml-0 mb-1 mt-1">Shimba Hills Coastal Rainforest Safari</p>
-          <p class="card-text ml-0 mb-1 mt-1">2 jours</p>
+        <!-- debut ExplorerHebergement PARTIE SEV -->
+        <div class="container mt-5">
+          <h1 class="h4 font-weight-bold">Explorer Airbnb</h1>
+          <!-- La div suivante permet de positionner les 3 cartes de taille égale en ligne, détachées les unes des autres -->
+          <div class="card-deck">
+            <div class="card shadow mb-5 bg-white rounded">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="https://a0.muscache.com/im/pictures/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg?aki_policy=large" class="card-img" alt="a white bedroom's picture, the bed is on the right, a lock is on the left side behind a roof window" title="bedroom's picture" />
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title text-left h5">Logements</h2>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow mb-5 bg-white rounded">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="https://a0.muscache.com/im/pictures/a77ee672-e790-4362-8cc5-52bec1371ece.jpg?aki_policy=large" class="card-img" alt="picture, two women're cooking in a kitchen" title="kitchen's picture" />
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title text-left h5">Expériences</h2>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow mb-5 bg-white rounded">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="https://a0.muscache.com/im/pictures/38f2bfd6-1f4d-46d7-babf-61657deef302.jpg?aki_policy=large" class="card-img" alt="picture, two people on the top of a mountain and a big rock on their left" title="aventure's picture" />
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title text-left h5">Aventures</h2>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- ///////////////////Quatrième card\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-3 card border-0">
-        <a href="https://www.airbnb.fr/experiences/1161391?source=p0" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/adb73b4e-e5ec-44c0-807d-28ba2be3f7ea.jpg?aki_policy=poster" alt="Card image cap"/>
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="text-dark">MEXICO</span>
-          </h6>
-          <p class="card-text ml-0 mb-1 mt-1">Ancient ruins and wonders of Oaxaca</p>
-          <p class="card-text ml-0 mb-1 mt-1">3 jours</p>
+        <div class="container">
+          <h2 class="h4 font-weight-bold">Hébergements Airbnb Plus</h2>
+          <h3 class="h5 font-weihgt-light">Une sélection de logements vérifiés selon des critères de qualité et de design</h3>
+          <div class="row-fuid">
+            <div class="col-12" id="photo">
+              <!-- l'img ci-dessous correspond au logo -->
+              <div class="text-center md-6">
+                <p>Plus</p>
+              </div>
+              <img src="https://a0.muscache.com/airbnb/static/icons/airbnb-0611901eac33ccfa5e93d793a2e21f09.svg" id="logo" alt="image" />
+              <input type=button class="btn btn-light" onclick=window.location. href='https://www.airbnb.fr/s/plus_homes?refinement_paths%5B%5D=%2Fselect_homes&search_type=section_navigation' value="Decouvrir des logements >" />
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <p class="text-success font-weight-bold"><a href="https://www.airbnb.fr/s/adventures?click_referer=t%3ASEE_ALL%7Csid%3A1064d9a3-67c0-44bc-bde4-e6904ffb7ed4%7Cst%3AEXPERIENCES_FEATURED_ADVENTURES&refinement_paths%5B%5D=%2Fadventures%2FKG%2FTag%3A639&last_search_session_id=1064d9a3-67c0-44bc-bde4-e6904ffb7ed4&search_type=section_navigation">Afficher toutes les aventures ></a></p>
-  </div>
-  <!-- ...............................les cartes avec des badges......................................... -->
-  <div class="container" id="badge1">
-    <h2 class="text-dark h4 font-weight-bold mb-3 mt-5">Logements dans le monde entier</h2>
-    <div class="row">
-      <!-- ////////////////////////////////////////////////Première card with badge\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
-        <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/90650537/58ce389d_original.jpg?aki_policy=large" alt="Card image cap">
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
-            <span class="text-black-50"> La Habana</span>
-            <span>
-              <!-- ..........................la petite étoile rouge ! :D ............................. -->
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                  <path d="M0,226v-226h226v226z" fill="none"></path>
-                  <g fill="#e74c3c">
-                    <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                  </g>
-                </g>
-              </svg> 4,78
-            </span>
-          </h6>
-          <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Magical B & B by the Sea Havana</span></p>
+        <!-- fin ExplorerHebergement PARTIE SEV -->
+        <!-- ...............................les cartes fines sans badges......................................... -->
+        <div class="container" id="fineCard">
+          <h2 class="text-dark h4 font-weight-bold mt-5">Découvrez les aventures Airbnb</h2>
+          <p class="mb-3">Voyages de plusieurs jours organisés par des experts locaux avec activités, repas et logements compris</p>
+          <div class="row">
+            <!-- /////////////////Première card\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-3 card border-0">
+              <a href="https://www.airbnb.fr/experiences/1161391?source=p0" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/64c23cf2-4833-4506-ab06-c943c7489709.jpg?aki_policy=poster" alt="Card image cap"/>
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="text-dark">TROMSOE</span>
+                </h6>
+                <p class="card-text ml-0 mb-1 mt-1">2 Nights PACKAGE All Inclusive</p>
+                <p class="card-text ml-0 mb-1 mt-1">3 jours</p>
+                <span>
+                  <!-- ..........................la petite étoile rouge ! :D ............................. -->
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                      <path d="M0,226v-226h226v226z" fill="none"></path>
+                      <g fill="#e74c3c">
+                        <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                      </g>
+                    </g>
+                  </svg> 5,O (1)
+                </span>
+              </div>
+            </div>
+            <!-- //////////////////Seconde card\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-3 card border-0">
+              <a href="https://www.airbnb.fr/experiences/1161391?source=p0" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/0c800f0c-abf8-41aa-8243-0eeae27a7c4e.jpg?aki_policy=poster" alt="Card image cap"/>
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="text-dark">BALI</span>
+                </h6>
+                <p class="card-text ml-0 mb-1 mt-1">Nusa Penida & Nusa Lembongan 3-day</p>
+                <p class="card-text ml-0 mb-1 mt-1">3 jours</p>
+              </div>
+            </div>
+            <!-- //////////////////Troisième card\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-3 card border-0">
+              <a href="https://www.airbnb.fr/experiences/1161391?source=p0" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/86c31198-0993-4b51-a008-fcb1759d6977.jpg?aki_policy=poster" alt="Card image cap"/>
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="text-dark">MOMBASA</span>
+                </h6>
+                <p class="card-text ml-0 mb-1 mt-1">Shimba Hills Coastal Rainforest Safari</p>
+                <p class="card-text ml-0 mb-1 mt-1">2 jours</p>
+              </div>
+            </div>
+            <!-- ///////////////////Quatrième card\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-3 card border-0">
+              <a href="https://www.airbnb.fr/experiences/1161391?source=p0" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/adb73b4e-e5ec-44c0-807d-28ba2be3f7ea.jpg?aki_policy=poster" alt="Card image cap"/>
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="text-dark">MEXICO</span>
+                </h6>
+                <p class="card-text ml-0 mb-1 mt-1">Ancient ruins and wonders of Oaxaca</p>
+                <p class="card-text ml-0 mb-1 mt-1">3 jours</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-success font-weight-bold"><a href="https://www.airbnb.fr/s/adventures?click_referer=t%3ASEE_ALL%7Csid%3A1064d9a3-67c0-44bc-bde4-e6904ffb7ed4%7Cst%3AEXPERIENCES_FEATURED_ADVENTURES&refinement_paths%5B%5D=%2Fadventures%2FKG%2FTag%3A639&last_search_session_id=1064d9a3-67c0-44bc-bde4-e6904ffb7ed4&search_type=section_navigation">Afficher toutes les aventures ></a></p>
         </div>
-      </div>
-      <!-- ////////////////////////////////////////////Seconde card with badge\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
-        <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/41671788/112cfec6_original.jpg?aki_policy=large" alt="Card image cap">
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <!-- <span class="badge badge-outline-dark border border-dark">SUPERHOST</span> -->
-            <span class="text-black-50">Canicatti</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                  <path d="M0,226v-226h226v226z" fill="none"></path>
-                  <g fill="#e74c3c">
-                    <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                  </g>
-                </g>
-              </svg> 4,81
-            </span>
-          </h6>
-          <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Superbe maison dans la campagne</span></p>
+        <!-- ...............................les cartes avec des badges......................................... -->
+        <div class="container" id="badge1">
+          <h2 class="text-dark h4 font-weight-bold mb-3 mt-5">Logements dans le monde entier</h2>
+          <div class="row">
+            <!-- ////////////////////////////////////////////////Première card with badge\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
+              <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/90650537/58ce389d_original.jpg?aki_policy=large" alt="Card image cap">
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
+                  <span class="text-black-50"> La Habana</span>
+                  <span>
+                    <!-- ..........................la petite étoile rouge ! :D ............................. -->
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                        <path d="M0,226v-226h226v226z" fill="none"></path>
+                        <g fill="#e74c3c">
+                          <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                        </g>
+                      </g>
+                    </svg> 4,78
+                  </span>
+                </h6>
+                <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Magical B & B by the Sea Havana</span></p>
+              </div>
+            </div>
+            <!-- ////////////////////////////////////////////Seconde card with badge\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
+              <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/41671788/112cfec6_original.jpg?aki_policy=large" alt="Card image cap">
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <!-- <span class="badge badge-outline-dark border border-dark">SUPERHOST</span> -->
+                  <span class="text-black-50">Canicatti</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                        <path d="M0,226v-226h226v226z" fill="none"></path>
+                        <g fill="#e74c3c">
+                          <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                        </g>
+                      </g>
+                    </svg> 4,81
+                  </span>
+                </h6>
+                <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Superbe maison dans la campagne</span></p>
+              </div>
+            </div>
+            <!-- ///////////////////////////////////////////////Troisième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
+              <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/6061582/a643208f_original.jpg?aki_policy=large" alt="Card image cap">
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
+                  <span class="text-black-50"> Akureyri</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                        <path d="M0,226v-226h226v226z" fill="none"></path>
+                        <g fill="#e74c3c">
+                          <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                        </g>
+                      </g>
+                    </svg> 4,76
+                  </span>
+                </h6>
+                <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">A beautiful villa in North Iceland</span></p>
+              </div>
+            </div>
+            <!-- //////////////////////////////////////////////Quatrième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
+              <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/4ea/air/v2/pictures/52a1e88d-c589-4d88-a0b0-a106270d00f1.jpg?t=r:w1200-h720-sfit,e:fjpg-c90" alt="Card image cap">
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="badge badge-danger text-white">PLUS</span>
+                  <span class="text-black-50"> La Nova Esquer...</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                        <path d="M0,226v-226h226v226z" fill="none"></path>
+                        <g fill="#e74c3c">
+                          <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                        </g>
+                      </g>
+                    </svg> 4,93
+                  </span>
+                </h6>
+                <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Exquisito apartamento con espacios abiertos y luz</span></p>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////Cinquième card with badge\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
+              <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/22032704/c7b4c7d8_original.jpg?aki_policy=large" alt="Card image cap">
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
+                  <span class="text-black-50"> Twentynine...</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                        <path d="M0,226v-226h226v226z" fill="none"></path>
+                        <g fill="#e74c3c">
+                          <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                        </g>
+                      </g>
+                    </svg> 4,96
+                  </span>
+                </h6>
+                <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Tile House</span></p>
+              </div>
+            </div>
+            <!-- //////////////////////////////////////////////Sixième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
+              <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/09fbbef3-7872-4747-a1b9-257eb07ad1d9.jpg?aki_policy=large" alt="Card image cap">
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
+                  <span class="text-black-50"> Heitzing.Vi...</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                        <path d="M0,226v-226h226v226z" fill="none"></path>
+                        <g fill="#e74c3c">
+                          <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                        </g>
+                      </g>
+                    </svg> 4,90
+                  </span>
+                </h6>
+                <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Top 2</span></p>
+              </div>
+            </div>
+            <!-- //////////////////////////////////////////////Septième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
+              <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/5109888/45382f93_original.jpg?aki_policy=large" alt="Card image cap">
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
+                  <span class="text-black-50"> Alozaina</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                        <path d="M0,226v-226h226v226z" fill="none"></path>
+                        <g fill="#e74c3c">
+                          <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                        </g>
+                      </g>
+                    </svg> 4,86
+                  </span>
+                </h6>
+                <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Airstream 'Glamping' in Andalucia!</span></p>
+              </div>
+            </div>
+            <!-- ////////////////////////////////////////////////Huitième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
+              <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/10431290/aa5f0e00_original.jpg?aki_policy=large" alt="Card image cap">
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
+                  <span class="text-black-50"> Rignano sul...</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                        <path d="M0,226v-226h226v226z" fill="none"></path>
+                        <g fill="#e74c3c">
+                          <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                        </g>
+                      </g>
+                    </svg> 4,87
+                  </span>
+                </h6>
+                <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Holiday in Toscany in the Strettoio</span></p>
+              </div>
+            </div>
+          </div>
+          <p class="text-success font-weight-bold"><a href="https://www.airbnb.fr/s/homes?click_referer=t%3ASEE_ALL%7Csid%3Acca55e1e-aa6e-46c1-9c80-0c333f426d85%7Cst%3AMAGAZINE_HOMES&title_type=MAGAZINE_HOMES&refinement_paths%5B%5D=%2Fhomes&last_search_session_id=cca55e1e-aa6e-46c1-9c80-0c333f426d85&search_type=section_navigation" target="new">Tout afficher (plus de 2000 >)</a></p>
         </div>
-      </div>
-      <!-- ///////////////////////////////////////////////Troisième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
-        <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/6061582/a643208f_original.jpg?aki_policy=large" alt="Card image cap">
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
-            <span class="text-black-50"> Akureyri</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                  <path d="M0,226v-226h226v226z" fill="none"></path>
-                  <g fill="#e74c3c">
-                    <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                  </g>
-                </g>
-              </svg> 4,76
-            </span>
-          </h6>
-          <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">A beautiful villa in North Iceland</span></p>
+        <!-- ...............................les cartes fines sans badges......................................... -->
+        <div class="container" id="fineCard2">
+          <h2 class="text-dark h4 font-weight-bold mt-5">Découvrez les aventures Airbnb</h2>
+          <p class="mb-3">Voyages de plusieurs jours organisés par des experts locaux avec activités, repas et logements compris</p>
+          <div class="row">
+            <!-- /////////////////Première card\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-3 card border-0">
+              <a href="https://www.airbnb.fr/experiences/1161391?source=p0" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/64c23cf2-4833-4506-ab06-c943c7489709.jpg?aki_policy=poster" alt="Card image cap"/>
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="text-dark">TROMSOE</span>
+                </h6>
+                <p class="card-text ml-0 mb-1 mt-1">2 Nights PACKAGE All Inclusive</p>
+                <p class="card-text ml-0 mb-1 mt-1">3 jours</p>
+                <span>
+                  <!-- ..........................la petite étoile rouge ! :D ............................. -->
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                      <path d="M0,226v-226h226v226z" fill="none"></path>
+                      <g fill="#e74c3c">
+                        <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                      </g>
+                    </g>
+                  </svg> 5,O (1)
+                </span>
+              </div>
+            </div>
+            <!-- //////////////////Seconde card\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-3 card border-0">
+              <a href="https://www.airbnb.fr/experiences/1161391?source=p0" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/0c800f0c-abf8-41aa-8243-0eeae27a7c4e.jpg?aki_policy=poster" alt="Card image cap"/>
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="text-dark">BALI</span>
+                </h6>
+                <p class="card-text ml-0 mb-1 mt-1">Nusa Penida & Nusa Lembongan 3-day</p>
+                <p class="card-text ml-0 mb-1 mt-1">3 jours</p>
+              </div>
+            </div>
+            <!-- //////////////////Troisième card\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-3 card border-0">
+              <a href="https://www.airbnb.fr/experiences/1161391?source=p0" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/86c31198-0993-4b51-a008-fcb1759d6977.jpg?aki_policy=poster" alt="Card image cap"/>
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="text-dark">MOMBASA</span>
+                </h6>
+                <p class="card-text ml-0 mb-1 mt-1">Shimba Hills Coastal Rainforest Safari</p>
+                <p class="card-text ml-0 mb-1 mt-1">2 jours</p>
+              </div>
+            </div>
+            <!-- ///////////////////Quatrième card\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-3 card border-0">
+              <a href="https://www.airbnb.fr/experiences/1161391?source=p0" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/adb73b4e-e5ec-44c0-807d-28ba2be3f7ea.jpg?aki_policy=poster" alt="Card image cap"/>
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="text-dark">MEXICO</span>
+                </h6>
+                <p class="card-text ml-0 mb-1 mt-1">Ancient ruins and wonders of Oaxaca</p>
+                <p class="card-text ml-0 mb-1 mt-1">3 jours</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-success font-weight-bold"><a href="https://www.airbnb.fr/s/adventures?click_referer=t%3ASEE_ALL%7Csid%3A1064d9a3-67c0-44bc-bde4-e6904ffb7ed4%7Cst%3AEXPERIENCES_FEATURED_ADVENTURES&refinement_paths%5B%5D=%2Fadventures%2FKG%2FTag%3A639&last_search_session_id=1064d9a3-67c0-44bc-bde4-e6904ffb7ed4&search_type=section_navigation">Afficher toutes les aventures ></a></p>
         </div>
-      </div>
-      <!-- //////////////////////////////////////////////Quatrième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
-        <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/4ea/air/v2/pictures/52a1e88d-c589-4d88-a0b0-a106270d00f1.jpg?t=r:w1200-h720-sfit,e:fjpg-c90" alt="Card image cap">
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="badge badge-danger text-white">PLUS</span>
-            <span class="text-black-50"> La Nova Esquer...</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                  <path d="M0,226v-226h226v226z" fill="none"></path>
-                  <g fill="#e74c3c">
-                    <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                  </g>
-                </g>
-              </svg> 4,93
-            </span>
-          </h6>
-          <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Exquisito apartamento con espacios abiertos y luz</span></p>
+        <!-- ...............................les cartes avec des badges......................................... -->
+        <div class="container" id="badge2">
+          <h2 class="text-dark h4 font-weight-bold mb-3 mt-5">Logements dans le monde entier</h2>
+          <div class="row">
+            <!-- ////////////////////////////////////////////////Première card with badge\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
+              <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/90650537/58ce389d_original.jpg?aki_policy=large" alt="Card image cap">
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
+                  <span class="text-black-50"> La Habana</span>
+                  <span>
+                    <!-- ..........................la petite étoile rouge ! :D ............................. -->
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                        <path d="M0,226v-226h226v226z" fill="none"></path>
+                        <g fill="#e74c3c">
+                          <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                        </g>
+                      </g>
+                    </svg> 4,78
+                  </span>
+                </h6>
+                <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Magical B & B by the Sea Havana</span></p>
+              </div>
+            </div>
+            <!-- ////////////////////////////////////////////Seconde card with badge\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
+              <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/41671788/112cfec6_original.jpg?aki_policy=large" alt="Card image cap">
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <!-- <span class="badge badge-outline-dark border border-dark">SUPERHOST</span> -->
+                  <span class="text-black-50">Canicatti</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                        <path d="M0,226v-226h226v226z" fill="none"></path>
+                        <g fill="#e74c3c">
+                          <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                        </g>
+                      </g>
+                    </svg> 4,81
+                  </span>
+                </h6>
+                <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Superbe maison dans la campagne</span></p>
+              </div>
+            </div>
+            <!-- ///////////////////////////////////////////////Troisième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
+              <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/6061582/a643208f_original.jpg?aki_policy=large" alt="Card image cap">
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
+                  <span class="text-black-50"> Akureyri</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                        <path d="M0,226v-226h226v226z" fill="none"></path>
+                        <g fill="#e74c3c">
+                          <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                        </g>
+                      </g>
+                    </svg> 4,76
+                  </span>
+                </h6>
+                <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">A beautiful villa in North Iceland</span></p>
+              </div>
+            </div>
+            <!-- //////////////////////////////////////////////Quatrième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
+              <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/4ea/air/v2/pictures/52a1e88d-c589-4d88-a0b0-a106270d00f1.jpg?t=r:w1200-h720-sfit,e:fjpg-c90" alt="Card image cap">
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="badge badge-danger text-white">PLUS</span>
+                  <span class="text-black-50"> La Nova Esquer...</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                        <path d="M0,226v-226h226v226z" fill="none"></path>
+                        <g fill="#e74c3c">
+                          <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                        </g>
+                      </g>
+                    </svg> 4,93
+                  </span>
+                </h6>
+                <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Exquisito apartamento con espacios abiertos y luz</span></p>
+              </div>
+            </div>
+            <!-- /////////////////////////////////////////Cinquième card with badge\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
+              <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/22032704/c7b4c7d8_original.jpg?aki_policy=large" alt="Card image cap">
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
+                  <span class="text-black-50"> Twentynine...</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                        <path d="M0,226v-226h226v226z" fill="none"></path>
+                        <g fill="#e74c3c">
+                          <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                        </g>
+                      </g>
+                    </svg> 4,96
+                  </span>
+                </h6>
+                <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Tile House</span></p>
+              </div>
+            </div>
+            <!-- //////////////////////////////////////////////Sixième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
+              <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/09fbbef3-7872-4747-a1b9-257eb07ad1d9.jpg?aki_policy=large" alt="Card image cap">
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
+                  <span class="text-black-50"> Heitzing.Vi...</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                        <path d="M0,226v-226h226v226z" fill="none"></path>
+                        <g fill="#e74c3c">
+                          <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                        </g>
+                      </g>
+                    </svg> 4,90
+                  </span>
+                </h6>
+                <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Top 2</span></p>
+              </div>
+            </div>
+            <!-- //////////////////////////////////////////////Septième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
+              <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/5109888/45382f93_original.jpg?aki_policy=large" alt="Card image cap">
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
+                  <span class="text-black-50"> Alozaina</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                        <path d="M0,226v-226h226v226z" fill="none"></path>
+                        <g fill="#e74c3c">
+                          <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                        </g>
+                      </g>
+                    </svg> 4,86
+                  </span>
+                </h6>
+                <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Airstream 'Glamping' in Andalucia!</span></p>
+              </div>
+            </div>
+            <!-- ////////////////////////////////////////////////Huitième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
+              <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
+                <img class="card-img-top" src="https://a0.muscache.com/im/pictures/10431290/aa5f0e00_original.jpg?aki_policy=large" alt="Card image cap">
+              </a>
+              <div class="card-body pl-0 pt-2 mb-1">
+                <h6>
+                  <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
+                  <span class="text-black-50"> Rignano sul...</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                        <path d="M0,226v-226h226v226z" fill="none"></path>
+                        <g fill="#e74c3c">
+                          <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
+                        </g>
+                      </g>
+                    </svg> 4,87
+                  </span>
+                </h6>
+                <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Holiday in Toscany in the Strettoio</span></p>
+              </div>
+            </div>
+          </div>
+          <p class="text-success font-weight-bold"><a href="https://www.airbnb.fr/s/homes?click_referer=t%3ASEE_ALL%7Csid%3Acca55e1e-aa6e-46c1-9c80-0c333f426d85%7Cst%3AMAGAZINE_HOMES&title_type=MAGAZINE_HOMES&refinement_paths%5B%5D=%2Fhomes&last_search_session_id=cca55e1e-aa6e-46c1-9c80-0c333f426d85&search_type=section_navigation" target="new">Tout afficher (plus de 2000 >)</a></p>
         </div>
-      </div>
-      <!-- /////////////////////////////////////////Cinquième card with badge\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
-        <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/22032704/c7b4c7d8_original.jpg?aki_policy=large" alt="Card image cap">
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
-            <span class="text-black-50"> Twentynine...</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                  <path d="M0,226v-226h226v226z" fill="none"></path>
-                  <g fill="#e74c3c">
-                    <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                  </g>
-                </g>
-              </svg> 4,96
-            </span>
-          </h6>
-          <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Tile House</span></p>
-        </div>
-      </div>
-      <!-- //////////////////////////////////////////////Sixième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
-        <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/09fbbef3-7872-4747-a1b9-257eb07ad1d9.jpg?aki_policy=large" alt="Card image cap">
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
-            <span class="text-black-50"> Heitzing.Vi...</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                  <path d="M0,226v-226h226v226z" fill="none"></path>
-                  <g fill="#e74c3c">
-                    <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                  </g>
-                </g>
-              </svg> 4,90
-            </span>
-          </h6>
-          <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Top 2</span></p>
-        </div>
-      </div>
-      <!-- //////////////////////////////////////////////Septième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
-        <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/5109888/45382f93_original.jpg?aki_policy=large" alt="Card image cap">
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
-            <span class="text-black-50"> Alozaina</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                  <path d="M0,226v-226h226v226z" fill="none"></path>
-                  <g fill="#e74c3c">
-                    <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                  </g>
-                </g>
-              </svg> 4,86
-            </span>
-          </h6>
-          <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Airstream 'Glamping' in Andalucia!</span></p>
-        </div>
-      </div>
-      <!-- ////////////////////////////////////////////////Huitième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
-        <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/10431290/aa5f0e00_original.jpg?aki_policy=large" alt="Card image cap">
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
-            <span class="text-black-50"> Rignano sul...</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                  <path d="M0,226v-226h226v226z" fill="none"></path>
-                  <g fill="#e74c3c">
-                    <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                  </g>
-                </g>
-              </svg> 4,87
-            </span>
-          </h6>
-          <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Holiday in Toscany in the Strettoio</span></p>
-        </div>
-      </div>
-    </div>
-    <p class="text-success font-weight-bold"><a href="https://www.airbnb.fr/s/homes?click_referer=t%3ASEE_ALL%7Csid%3Acca55e1e-aa6e-46c1-9c80-0c333f426d85%7Cst%3AMAGAZINE_HOMES&title_type=MAGAZINE_HOMES&refinement_paths%5B%5D=%2Fhomes&last_search_session_id=cca55e1e-aa6e-46c1-9c80-0c333f426d85&search_type=section_navigation" target="new">Tout afficher (plus de 2000 >)</a></p>
-  </div>
-  <!-- ...............................les cartes fines sans badges......................................... -->
-  <div class="container" id="fineCard2">
-    <h2 class="text-dark h4 font-weight-bold mt-5">Découvrez les aventures Airbnb</h2>
-    <p class="mb-3">Voyages de plusieurs jours organisés par des experts locaux avec activités, repas et logements compris</p>
-    <div class="row">
-      <!-- /////////////////Première card\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-3 card border-0">
-        <a href="https://www.airbnb.fr/experiences/1161391?source=p0" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/64c23cf2-4833-4506-ab06-c943c7489709.jpg?aki_policy=poster" alt="Card image cap"/>
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="text-dark">TROMSOE</span>
-          </h6>
-          <p class="card-text ml-0 mb-1 mt-1">2 Nights PACKAGE All Inclusive</p>
-          <p class="card-text ml-0 mb-1 mt-1">3 jours</p>
-          <span>
-            <!-- ..........................la petite étoile rouge ! :D ............................. -->
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-              <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                <path d="M0,226v-226h226v226z" fill="none"></path>
-                <g fill="#e74c3c">
-                  <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                </g>
-              </g>
-            </svg> 5,O (1)
-          </span>
-        </div>
-      </div>
-      <!-- //////////////////Seconde card\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-3 card border-0">
-        <a href="https://www.airbnb.fr/experiences/1161391?source=p0" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/0c800f0c-abf8-41aa-8243-0eeae27a7c4e.jpg?aki_policy=poster" alt="Card image cap"/>
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="text-dark">BALI</span>
-          </h6>
-          <p class="card-text ml-0 mb-1 mt-1">Nusa Penida & Nusa Lembongan 3-day</p>
-          <p class="card-text ml-0 mb-1 mt-1">3 jours</p>
-        </div>
-      </div>
-      <!-- //////////////////Troisième card\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-3 card border-0">
-        <a href="https://www.airbnb.fr/experiences/1161391?source=p0" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/86c31198-0993-4b51-a008-fcb1759d6977.jpg?aki_policy=poster" alt="Card image cap"/>
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="text-dark">MOMBASA</span>
-          </h6>
-          <p class="card-text ml-0 mb-1 mt-1">Shimba Hills Coastal Rainforest Safari</p>
-          <p class="card-text ml-0 mb-1 mt-1">2 jours</p>
-        </div>
-      </div>
-      <!-- ///////////////////Quatrième card\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-3 card border-0">
-        <a href="https://www.airbnb.fr/experiences/1161391?source=p0" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/adb73b4e-e5ec-44c0-807d-28ba2be3f7ea.jpg?aki_policy=poster" alt="Card image cap"/>
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="text-dark">MEXICO</span>
-          </h6>
-          <p class="card-text ml-0 mb-1 mt-1">Ancient ruins and wonders of Oaxaca</p>
-          <p class="card-text ml-0 mb-1 mt-1">3 jours</p>
-        </div>
-      </div>
-    </div>
-    <p class="text-success font-weight-bold"><a href="https://www.airbnb.fr/s/adventures?click_referer=t%3ASEE_ALL%7Csid%3A1064d9a3-67c0-44bc-bde4-e6904ffb7ed4%7Cst%3AEXPERIENCES_FEATURED_ADVENTURES&refinement_paths%5B%5D=%2Fadventures%2FKG%2FTag%3A639&last_search_session_id=1064d9a3-67c0-44bc-bde4-e6904ffb7ed4&search_type=section_navigation">Afficher toutes les aventures ></a></p>
-  </div>
-  <!-- ...............................les cartes avec des badges......................................... -->
-  <div class="container" id="badge2">
-    <h2 class="text-dark h4 font-weight-bold mb-3 mt-5">Logements dans le monde entier</h2>
-    <div class="row">
-      <!-- ////////////////////////////////////////////////Première card with badge\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
-        <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/90650537/58ce389d_original.jpg?aki_policy=large" alt="Card image cap">
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
-            <span class="text-black-50"> La Habana</span>
-            <span>
-              <!-- ..........................la petite étoile rouge ! :D ............................. -->
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                  <path d="M0,226v-226h226v226z" fill="none"></path>
-                  <g fill="#e74c3c">
-                    <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                  </g>
-                </g>
-              </svg> 4,78
-            </span>
-          </h6>
-          <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Magical B & B by the Sea Havana</span></p>
-        </div>
-      </div>
-      <!-- ////////////////////////////////////////////Seconde card with badge\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
-        <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/41671788/112cfec6_original.jpg?aki_policy=large" alt="Card image cap">
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <!-- <span class="badge badge-outline-dark border border-dark">SUPERHOST</span> -->
-            <span class="text-black-50">Canicatti</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                  <path d="M0,226v-226h226v226z" fill="none"></path>
-                  <g fill="#e74c3c">
-                    <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                  </g>
-                </g>
-              </svg> 4,81
-            </span>
-          </h6>
-          <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Superbe maison dans la campagne</span></p>
-        </div>
-      </div>
-      <!-- ///////////////////////////////////////////////Troisième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
-        <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/6061582/a643208f_original.jpg?aki_policy=large" alt="Card image cap">
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
-            <span class="text-black-50"> Akureyri</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                  <path d="M0,226v-226h226v226z" fill="none"></path>
-                  <g fill="#e74c3c">
-                    <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                  </g>
-                </g>
-              </svg> 4,76
-            </span>
-          </h6>
-          <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">A beautiful villa in North Iceland</span></p>
-        </div>
-      </div>
-      <!-- //////////////////////////////////////////////Quatrième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
-        <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/4ea/air/v2/pictures/52a1e88d-c589-4d88-a0b0-a106270d00f1.jpg?t=r:w1200-h720-sfit,e:fjpg-c90" alt="Card image cap">
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="badge badge-danger text-white">PLUS</span>
-            <span class="text-black-50"> La Nova Esquer...</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                  <path d="M0,226v-226h226v226z" fill="none"></path>
-                  <g fill="#e74c3c">
-                    <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                  </g>
-                </g>
-              </svg> 4,93
-            </span>
-          </h6>
-          <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Exquisito apartamento con espacios abiertos y luz</span></p>
-        </div>
-      </div>
-      <!-- /////////////////////////////////////////Cinquième card with badge\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
-        <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/22032704/c7b4c7d8_original.jpg?aki_policy=large" alt="Card image cap">
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
-            <span class="text-black-50"> Twentynine...</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                  <path d="M0,226v-226h226v226z" fill="none"></path>
-                  <g fill="#e74c3c">
-                    <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                  </g>
-                </g>
-              </svg> 4,96
-            </span>
-          </h6>
-          <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Tile House</span></p>
-        </div>
-      </div>
-      <!-- //////////////////////////////////////////////Sixième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
-        <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/09fbbef3-7872-4747-a1b9-257eb07ad1d9.jpg?aki_policy=large" alt="Card image cap">
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
-            <span class="text-black-50"> Heitzing.Vi...</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                  <path d="M0,226v-226h226v226z" fill="none"></path>
-                  <g fill="#e74c3c">
-                    <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                  </g>
-                </g>
-              </svg> 4,90
-            </span>
-          </h6>
-          <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Top 2</span></p>
-        </div>
-      </div>
-      <!-- //////////////////////////////////////////////Septième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
-        <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/5109888/45382f93_original.jpg?aki_policy=large" alt="Card image cap">
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
-            <span class="text-black-50"> Alozaina</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                  <path d="M0,226v-226h226v226z" fill="none"></path>
-                  <g fill="#e74c3c">
-                    <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                  </g>
-                </g>
-              </svg> 4,86
-            </span>
-          </h6>
-          <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Airstream 'Glamping' in Andalucia!</span></p>
-        </div>
-      </div>
-      <!-- ////////////////////////////////////////////////Huitième card with badge\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-      <div class="col-6 col-md-4 col-lg-3 card border-0" style="width: 18rem;">
-        <a href="https://www.airbnb.fr/rooms/1234202?source_impression_id=p3_1574257467_NZ6zsDnn0nDEK1GL" target="new">
-          <img class="card-img-top" src="https://a0.muscache.com/im/pictures/10431290/aa5f0e00_original.jpg?aki_policy=large" alt="Card image cap">
-        </a>
-        <div class="card-body pl-0 pt-2 mb-1">
-          <h6>
-            <span class="badge badge-outline-dark border border-dark">SUPERHOST</span>
-            <span class="text-black-50"> Rignano sul...</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226" style=" fill:#000000;">
-                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
-                  <path d="M0,226v-226h226v226z" fill="none"></path>
-                  <g fill="#e74c3c">
-                    <path d="M113,170.35692l46.79142,28.24058c7.38267,4.45408 16.48858,-2.16583 14.52992,-10.55608l-12.42058,-53.23242l41.34858,-35.821c6.51633,-5.64058 3.03217,-16.34733 -5.55583,-17.07242l-54.42833,-4.61417l-21.29108,-50.23792c-3.36175,-7.91942 -14.58642,-7.91942 -17.94817,0l-21.29108,50.23792l-54.42833,4.61417c-8.588,0.72508 -12.07217,11.43183 -5.55583,17.07242l41.34858,35.821l-12.42058,53.23242c-1.95867,8.39025 7.14725,15.01017 14.52992,10.55608z"></path>
-                  </g>
-                </g>
-              </svg> 4,87
-            </span>
-          </h6>
-          <p class="card-text"><span class="d-inline-block text-truncate" style="max-width: 200px;">Holiday in Toscany in the Strettoio</span></p>
-        </div>
-      </div>
-    </div>
-    <p class="text-success font-weight-bold"><a href="https://www.airbnb.fr/s/homes?click_referer=t%3ASEE_ALL%7Csid%3Acca55e1e-aa6e-46c1-9c80-0c333f426d85%7Cst%3AMAGAZINE_HOMES&title_type=MAGAZINE_HOMES&refinement_paths%5B%5D=%2Fhomes&last_search_session_id=cca55e1e-aa6e-46c1-9c80-0c333f426d85&search_type=section_navigation" target="new">Tout afficher (plus de 2000 >)</a></p>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
-</html>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      </body>
+      </html>

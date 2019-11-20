@@ -10,13 +10,13 @@
 <body>
   <!-- debut ExplorerHebergement PARTIE SEV -->
   <div class="container">
-  <h1 class="h4">Explorer Airbnb</h1>
+  <h1 class="h4 font-weight-bold">Explorer Airbnb</h1>
   <!-- La div suivante permet de positionner les 3 cartes de taille égale en ligne, détachées les unes des autres -->
   <div class="card-deck">
         <div class="card shadow mb-5 bg-white rounded">
           <div class="row no-gutters">
           <div class="col-md-4">
-          <img src="https://a0.muscache.com/im/pictures/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg?aki_policy=large" class="card-img" alt="a white bedroom's picture, the bed is on the right, a lock is on the left side behind a roof window" title="bedroom's picture">
+          <img src="https://a0.muscache.com/im/pictures/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg?aki_policy=large" class="card-img" alt="a white bedroom's picture, the bed is on the right, a lock is on the left side behind a roof window" title="bedroom's picture" />
         </div>
             <div class="card-body">
             <h2 class="card-title text-left h5">Logements</h2>
@@ -26,7 +26,7 @@
         <div class="card shadow mb-5 bg-white rounded">
           <div class="row no-gutters">
             <div class="col-md-4">
-            <img src="https://a0.muscache.com/im/pictures/a77ee672-e790-4362-8cc5-52bec1371ece.jpg?aki_policy=large" class="card-img" alt="picture, two women're cooking in a kitchen" title="kitchen's picture">
+            <img src="https://a0.muscache.com/im/pictures/a77ee672-e790-4362-8cc5-52bec1371ece.jpg?aki_policy=large" class="card-img" alt="picture, two women're cooking in a kitchen" title="kitchen's picture" />
         </div>
               <div class="card-body">
               <h2 class="card-title text-left h5">Expériences</h2>
@@ -36,7 +36,7 @@
         <div class="card shadow mb-5 bg-white rounded">
           <div class="row no-gutters">
             <div class="col-md-4">
-              <img src="https://a0.muscache.com/im/pictures/38f2bfd6-1f4d-46d7-babf-61657deef302.jpg?aki_policy=large" class="card-img" alt="picture, two people on the top of a mountain and a big rock on their left" title="aventure's picture">
+              <img src="https://a0.muscache.com/im/pictures/38f2bfd6-1f4d-46d7-babf-61657deef302.jpg?aki_policy=large" class="card-img" alt="picture, two people on the top of a mountain and a big rock on their left" title="aventure's picture" />
         </div>
               <div class="card-body">
               <h2 class="card-title text-left h5">Aventures</h2>
@@ -46,11 +46,19 @@
     </div>
   </div>
   <div class="container">
-    <h2 class="h4">Hébergements Airbnb Plus</h2>
-    <h3 class="h5">Une sélection de logements vérifiés selon des critères de qualité et de design</h3>
-      <img src="https://a0.muscache.com/4ea/air/v2/pictures/ea6285d9-5352-4447-b13d-b39bfc92dfe5.jpg?t=c:w1131-h343,r:w1131-h343-sfit,e:fjpg-c75" class="card-img" alt="picture a chair on left, un meuble au milieu et deux plantes vertes à gauche du meuble" title="picture flat" />
-      <img src="https://a0.muscache.com/airbnb/static/icons/airbnb-0611901eac33ccfa5e93d793a2e21f09.svg" />
-  </div>
+    <h2 class="h4 font-weight-bold">Hébergements Airbnb Plus</h2>
+    <h3 class="h5 font-weihgt-light">Une sélection de logements vérifiés selon des critères de qualité et de design</h3>
+      <div class="row-fuid">
+        <div class="col-12" id="photo">
+          <!-- l'img ci-dessous correspond au logo -->
+          <div class="text-center md-6">
+          <p>Plus</p>
+          </div>
+          <img src="https://a0.muscache.com/airbnb/static/icons/airbnb-0611901eac33ccfa5e93d793a2e21f09.svg" id="logo" />
+          <input type=button class="btn btn-light" onclick=window.location.href='https://www.airbnb.fr/s/plus_homes?refinement_paths%5B%5D=%2Fselect_homes&search_type=section_navigation' value="Decouvrir des logements >" />
+          </div>
+        </div>
+      </div>
   <!-- fin ExplorerHebergement PARTIE SEV -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
